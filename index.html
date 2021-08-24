@@ -11,8 +11,16 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- Font Google API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
 
     <title>Portfolio | Ghaza Pratama</title>
   </head>
@@ -46,9 +54,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="./img/pp gredu.jpg" alt="Ghaza Pratama" class="rounded-circle img-thumbnail" />
+      <img src="./img/pp gredu.jpg" alt="Ghaza Pratama" class="rounded-circle img-thumbnail"/>
       <h1 class="display-4">Ghaza Pratama</h1>
-      <p class="lead">Student | Ameteur</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -65,15 +73,15 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col text-center mb-4">
+          <div class="col text-center mb-4" data-aos="zoom-in-down" data-aos-duration="150">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-up-right" data-aos-duration="500">
             <p>Seorang yang gak tau dateng darimana yang tertarik dengan teknologi, terutama teknologi yang dipakai sehari-hari. Ingin mencari tau bagaimana cara kerjanya.</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="500">
             <p>Hobinya nontonin orang main game, tapi terkadang juga main game jika ada temen yang ngajak main atau dipaksa suruh maen aja. Gitulah singkatnya.</p>
           </div>
         </div>
@@ -98,9 +106,9 @@
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row justify-content-evenly">
+        <div class="row justify-content-evenly" >
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out-right">
               <img src="./img/projects/website2.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text">Website iseng yang ini bagian halaman untuk download semua aplikasi yang tersedia.</p>
@@ -108,16 +116,15 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out-down" data-aos-delay="100">
               <img src="./img/projects/bot.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
-                
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Robot ini bukan punya saya, tapi memang robot bisa bekerja lebih efisien dibandingkan manusia.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out-left" data-aos-delay="150">
               <img src="./img/projects/website1.png" class="card-img-top" alt="Project 3" />
               <div class="card-body">
                 <p class="card-text">Website buat download beberapa program gratisan yang pengen dishare aja sama pemilik website ini.</p>
@@ -125,7 +132,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out-right">
               <img src="./img/projects/botv1.png" class="card-img-top" alt="Project 4" />
               <div class="card-body">
                 <p class="card-text">Bot discord dibuat menggunakan node.js merupakan gabungan fungsi dari bot-bot discord terkenal.</p>
@@ -133,10 +140,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="zoom-out-left">
               <img src="./img/projects/gembot.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
-                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                 <p class="card-text">Bot discord tapi yang ini dibuat sama orang lain gw cuma comot githubnya dia doang. Masih SelfHosting.</p>
               </div>
             </div>
@@ -148,6 +154,74 @@
     </section>
     <!-- End Projects -->
 
+    <!-- Galery -->
+    <section id="galery">
+      <div class="container">
+      
+        <div class="row text-center mb-5 pb-5">
+          <div class="col">
+            <h2>Galery</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/buildings.jpg" alt="Gambar 1" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/fire.jpg" alt="Gambar 2" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/milkyway.jpg" alt="Gambar 3" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/mountain.jpg" alt="Gambar 4" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/Pura_Ulun_Danu_Bratan.jpg" alt="Gambar 5" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/road.jpg" alt="Gambar 6" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/menara.jpg" alt="Gambar 7" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/thebeach.jpg" alt="Gambar 8" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/tv.jpg" alt="Gambar 9" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="./img/galery/wall.jpg" alt="Gambar 10" img="fluid" img-galery data-aos="fade-up" class="rounded-1">
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+    <!-- Galery -->
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -157,6 +231,8 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-6">
+
+              <!-- My Alert -->
               <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                 <strong>Terimakasih atas pesannya!</strong>Pesan anda sudah kami terima
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -182,6 +258,7 @@
 
                 <button type="kirim" class="btn btn-primary btn-kirim">Kirim</button>
 
+                <!-- Loading -->
                 <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                   Loading...
@@ -202,8 +279,36 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      
+      AOS.init({
+        once: false, // diulang
+      });
+      
+      const imageGalery = document.querySelectorAll('.img-galery');
+
+      imageGalery.forEach((img, i) => {
+        img.dataset.aos = 'fade-up';
+      });
+
+    </script>  
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from('.jumbotron img', { duration: 1, y: -100, opacity: 0, ease: 'back' })
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0 })
+      gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'sine'})
+      gsap.to(".lead", {duration: 1.5, text: 'Student | Ameteur', delay: 1});
+    </script>
+    <!-- My Js -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzeqdHIWQOgwYhTH3S5iOnTqOWLCARKidWUNfE3c9Qjyq63SxmgfylxpBlBDlPxYAu5/exec'
       const form = document.forms['fgp-contact-form']
@@ -221,11 +326,12 @@
 
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            // // tampilkan tombol kirim dan hilangkan tombol loading 
+            // tampilkan tombol kirim dan hilangkan tombol loading 
             // btnLoading.classList.toggle('d-none');
             // btnKirim.classList.toggle('d-none');
+
             // // tampilkan alert
-            // myAlert.classList.toggle('d-none');
+            // myAlert.classList.toggle('my-alert');
 
             // reset formnya
             form.reset();
