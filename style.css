@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+* {
+  font-family: 'Besley', serif;
+}
+
 .jumbotron {
   padding-top: 7rem;
   background-color: #e2edff;
@@ -8,5 +14,14 @@
 }
 
 section {
-    padding-top: 5rem;
+  padding-top: 5rem;
+}
+
+.img-galery {
+  width: 100%;
+
+}
+
+#galery .row > * {
+  padding: 10px;
 }
